@@ -61,6 +61,12 @@ provider:
 #    - include-me-dir/**
 
 functions:
+  web:
+    handler: handler.index
+    events:
+      - http:
+          path: '/'
+          method: get
   hello:
     handler: handler.hello
 #    The following are a few example events you can configure
