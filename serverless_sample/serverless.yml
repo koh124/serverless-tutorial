@@ -65,7 +65,7 @@ functions:
     handler: handler.index
     events:
       - http:
-          path: '/'
+          path: '/index'
           method: get
   hello:
     handler: handler.hello
